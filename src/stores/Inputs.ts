@@ -1,4 +1,4 @@
 import { writable } from "svelte/store";
 
-//Using Store and Exporting Props;
+//Using Store;
 export let Inputs = writable('');

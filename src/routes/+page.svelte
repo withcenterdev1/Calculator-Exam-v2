@@ -12,7 +12,7 @@
     async function calculate() {
         const response = await fetch('http://localhost:5173/', {
             method: 'POST',
-            body: JSON.stringify({inputs:$Inputs }),
+            body: JSON.stringify($Inputs),
             headers: {
                 'content-type': 'application/json'
             }
