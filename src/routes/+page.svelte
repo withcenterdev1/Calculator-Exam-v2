@@ -16,7 +16,8 @@
                 'content-type': 'application/json'
             }
         });
-        $Inputs = await response.json();
+        const result = await response.json();
+        $Inputs = result;
     }
 
 </script>
