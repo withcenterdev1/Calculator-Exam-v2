@@ -30,20 +30,20 @@
     <!-- //Binding Values to Inputs -->
     <input type="text" bind:value={$Inputs}>
     <div class="keypads">
-        <button on:click={() => {addInputs("0")}}>0</button>
-        <button on:click={() => {addInputs("1")}}>1</button>
-        <button on:click={() => {addInputs("2")}}>2</button>
-        <button on:click={() => {addInputs("/")}}>÷</button>
-        <button on:click={() => {addInputs("3")}}>3</button>
-        <button on:click={() => {addInputs("4")}}>4</button>
-        <button on:click={() => {addInputs("5")}}>5</button>
-        <button on:click={() => {addInputs("*")}}>x</button>
-        <button on:click={() => {addInputs("6")}}>6</button>
         <button on:click={() => {addInputs("7")}}>7</button>
         <button on:click={() => {addInputs("8")}}>8</button>
-        <button on:click={() => {addInputs("-")}}>-</button>
         <button on:click={() => {addInputs("9")}}>9</button>
+        <button on:click={() => {addInputs("/")}}>÷</button>
+        <button on:click={() => {addInputs("4")}}>4</button>
+        <button on:click={() => {addInputs("5")}}>5</button>
+        <button on:click={() => {addInputs("6")}}>6</button>
+        <button on:click={() => {addInputs("*")}}>x</button>
+        <button on:click={() => {addInputs("1")}}>1</button>
+        <button on:click={() => {addInputs("2")}}>2</button>
+        <button on:click={() => {addInputs("3")}}>3</button>
+        <button on:click={() => {addInputs("-")}}>-</button>
         <ClearInput on:clear={handleClearInputs}/> 
+        <button on:click={() => {addInputs("0")}}>0</button>
         <button on:click={() => {calculate()}}>=</button>
         <button on:click={() => {addInputs("+")}}>+</button>
     </div>
@@ -62,7 +62,7 @@
     }
     .keypads{
         display: grid;
-        grid-template-columns: 60px 60px 60px 60px;
+        grid-template-columns: 65px 60px 60px 60px;
         row-gap: 10px;
         column-gap: 10px;
         margin-left: 3%;
