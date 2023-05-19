@@ -1,7 +1,7 @@
 <script lang="ts">
     import { Inputs } from "../stores/Inputs"; 
     import Calculator from "../components/Calculator.svelte";
-    import ClearInput from "./ClearInput.svelte";
+    import ClearInputButton from "./ClearInputButton.svelte";
 
     //Assigning Inputs so there would be a Reactivity
     function addInputs(addInput:string){
@@ -39,7 +39,7 @@
         <button on:click={() => {addInputs("2")}}>2</button>
         <button on:click={() => {addInputs("3")}}>3</button>
         <button on:click={() => {addInputs("-")}}>-</button>
-        <ClearInput on:clear={(e) => {$Inputs = e.detail}}/> 
+        <ClearInputButton on:clear={(e) => {$Inputs = e.detail}}/> 
         <button on:click={() => {addInputs("0")}}>0</button>
         <button on:click={() => {calculate()}}>=</button>
         <button on:click={() => {addInputs("+")}}>+</button>
