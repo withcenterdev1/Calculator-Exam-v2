@@ -2,6 +2,7 @@
     import { Inputs } from "../stores/Inputs"; 
     import Calculator from "../components/Calculator.svelte";
     import ClearInputButton from "./ClearInputButton.svelte";
+	import Title from "../components/Title.svelte";
 
     //Assigning Inputs so there would be a Reactivity
     function addInputs(addInput:string){
@@ -22,7 +23,7 @@
 
 </script>
 
-<h1>Calculator</h1>
+<Title titleName="Calculator"/>
 <Calculator >
     <!-- //Binding Values to Inputs -->
     <input type="text" bind:value={$Inputs}>
@@ -48,9 +49,6 @@
 
 
 <style>
-    h1{
-        text-align: center;
-    }
     input{
         margin-left: 8px;
         width: 90%;

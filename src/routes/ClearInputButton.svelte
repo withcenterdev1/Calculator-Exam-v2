@@ -1,7 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
 	
-
 	const dispatch = createEventDispatcher();
 
 	//My Event Dispatcher for clearing Inputs
