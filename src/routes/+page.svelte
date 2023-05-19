@@ -18,11 +18,7 @@
         });
         $Inputs = await response.json();
     }
-
-    function handleClearInputs(e:any) {
-		$Inputs = e.detail;
-	}
-
+    
 </script>
 
 <h1>Calculator</h1>
@@ -42,7 +38,7 @@
         <button on:click={() => {addInputs("2")}}>2</button>
         <button on:click={() => {addInputs("3")}}>3</button>
         <button on:click={() => {addInputs("-")}}>-</button>
-        <ClearInput on:clear={handleClearInputs}/> 
+        <ClearInput on:clear={(e) => {$Inputs = e.detail}}/> 
         <button on:click={() => {addInputs("0")}}>0</button>
         <button on:click={() => {calculate()}}>=</button>
         <button on:click={() => {addInputs("+")}}>+</button>
