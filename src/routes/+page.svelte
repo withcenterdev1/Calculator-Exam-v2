@@ -18,7 +18,7 @@
         });
         $Inputs = await response.json();
     }
-    
+
 </script>
 
 <h1>Calculator</h1>
@@ -51,10 +51,11 @@
         text-align: center;
     }
     input{
-        margin-left: 5%;
+        margin-left: 8px;
         width: 90%;
         text-align: end;
         margin-bottom: 10px;
+        padding: 5px 10px 5px 10px;
     }
     .keypads{
         display: grid;
